@@ -2,6 +2,10 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Counter from './counter'
+import Team from './Team'
+import User from './User'
+
 
 function App() {
 function handleClick(){
@@ -12,7 +16,11 @@ function vajilla(num){
 }
 
   return (
-    <>
+    <div>
+
+      <User></User>
+     
+
     
       <h1>React core concept</h1>
     
@@ -22,8 +30,12 @@ function vajilla(num){
     
     <button onClick={()=>vajilla(1)}>vajilla parameter</button>
 
-     
-    </>
+     <Counter></Counter>
+
+    <Team></Team>
+
+
+    </div>
   )
 }
 
